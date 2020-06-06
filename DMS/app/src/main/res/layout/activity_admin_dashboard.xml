@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDashboard"
+    android:orientation="vertical"
+    android:background="@drawable/admindashboard"
+    android:layout_gravity="center"
+    android:padding="30dp"
+    android:gravity="center"
+    >
+<!--    <Button-->
+<!--        android:id="@+id/addDisaster"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:background="@drawable/btn_custom"-->
+<!--        android:text="Add Disaster"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/weatherforecast"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:background="@drawable/btn_custom"-->
+<!--        android:text="CHECK WEATHER FORECAST"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        />-->
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/awarenesssms"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:background="@drawable/btn_custom"-->
+<!--        android:text="SEND AWARENESS MESSAGE"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        >-->
+
+<!--    </Button>-->
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            >
+            <GridLayout
+                android:id="@+id/mainGrid"
+                android:rowCount="5"
+                android:columnCount="2"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:padding="14dp">
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_rowWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/message"
+                            android:paddingBottom="10dp"
+                            android:id="@+id/weatherforecast"
+                            />
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="W E A T H E R   F O R C A S T"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_rowWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+
+                app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/add_"
+                            android:paddingBottom="10dp"
+                            android:id="@+id/addDisaster"
+                            />
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="A D D    D I S A S T E R"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_rowWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/message"
+                            android:paddingBottom="10dp"
+                            android:id="@+id/awarenesssms"
+                            />
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="A W A R E N E S S    M E S S A G E"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_rowWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginBottom="35dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:id="@+id/logout_button"
+                            android:paddingBottom="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_power">
+
+                        </ImageView>
+
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="  L O G O U T   "
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <!-- ROW 3  -->
+                <!-- COLUMN 1  -->
+
+
+                <!-- COLUMN 2  -->
+
+
+                <!-- COLUMN 2  -->
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:id="@+id/logout_button"-->
+<!--        android:src="@drawable/ic_power_settings_new_black_24dp">-->
+
+
+<!--    </ImageView>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="LOGOUT"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--    </TextView>-->
+
+
+</LinearLayout>

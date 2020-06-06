@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DMS</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyDrbnBLOJvpzdfLECtmfws1CJygWcjGIDc</string>
+    <string-array name="Dms_type">
+        <item>Select Type</item>
+        <item>disaster_zone</item>
+        <item>Help_zone</item>
+    </string-array>
+</resources>
